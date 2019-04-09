@@ -9,12 +9,12 @@ export class IconComponentUiComponent  {
   @HostBinding('draggable') draggable = true;
 
   @HostListener('dragstart', ['$event'])
-  dragStartIcon($event: any): void {
+  dragStartIcon($event: DragEvent): void {
     console.log('icon-component-ui:dragStart', $event);
   }
 
   @HostListener('dragend', ['$event'])
-  dragEndIcon($event: any): void {
+  dragEndIcon($event: DragEvent): void {
     console.log('icon-component-ui:dragEnd', $event);
   }
 

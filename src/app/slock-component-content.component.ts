@@ -8,22 +8,22 @@ import { Component, Input, HostListener } from '@angular/core';
 export class SlockComponentContentComponent  {
   
   @HostListener('dragover', ['$event'])
-  dragOverElement($event: any): void {
-    console.log('slock-component-content:dragOver', $event);
+  dragOverElement($event: DragEvent): void {
+    // console.log('slock-component-content:dragOver', $event);
   }
 
   @HostListener('dragleave', ['$event'])
-  dragLeaveElement($event: any) {
+  dragLeaveElement($event: DragEvent) {
     console.log('slock-component-content:dragLeave', $event);
   }
 
   @HostListener('dragenter', ['$event'])
-  dragEnterElement($event: any) {
+  dragEnterElement($event: DragEvent) {
     console.log('slock-component-content:dragEnter', $event);
   }
 
-  @HostListener('ondrop', ['$event'])
-  dragDropElement($event: any) {
+  @HostListener('window:drop', ['$event'])
+  dragDropElement($event: DragEvent) {
     console.log('slock-component-content:dragDrop', $event);
   }
 
