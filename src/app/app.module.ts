@@ -8,6 +8,7 @@ import { ContentLayoutComponent } from './content-layout.component';
 import { FloatingMenuComponent } from './floating-menu.component';
 import { ElementComponentUiComponent } from './element-component-ui.component';
 import { IconComponentUiComponent } from './icon-component-ui.component';
+import { SlockComponentContentComponent } from './slock-component-content.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -17,7 +18,8 @@ import { IconComponentUiComponent } from './icon-component-ui.component';
     ContentLayoutComponent,
     FloatingMenuComponent,
     IconComponentUiComponent,
-    ElementComponentUiComponent
+    ElementComponentUiComponent,
+    SlockComponentContentComponent
   ],
   bootstrap: [AppComponent]
 })

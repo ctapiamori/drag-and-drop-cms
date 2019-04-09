@@ -38,13 +38,13 @@ export class AppComponent implements OnInit, AfterViewInit {
 
     function init() {
       // Fill listeners
-      fills = document.querySelectorAll('.fill');
+      /* fills = document.querySelectorAll('.fill');
       parentClone = document.getElementById('parent').cloneNode(true);
 
       for (const fill of fills) {
         fill.addEventListener('dragstart', dragStart);
         fill.addEventListener('dragend', dragEnd);
-      }
+      } */
     }
 
     function dragStart() {
